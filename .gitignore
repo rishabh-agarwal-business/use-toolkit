@@ -1,0 +1,40 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+Step 1: Create GitHub Repo
+bashGo to github.com → New Repository → Name it "react-hooks-lib"
+Step 2: Clone & Setup
+bashgit clone https://github.com/YOUR_USERNAME/react-hooks-lib.git
+cd react-hooks-lib
+npm install
+Step 3: Create npm Account
+Go to npmjs.com → Sign up → Create access token
+Step 4: Build & Publish
+bashnpm login
+npm run build
+npm publish --workspace=packages/core --access public
+Step 5: Done! 🎉
+Your package is now on npm!
+Users can install with: npm install @YOUR_USERNAME/react-hooks-lib
